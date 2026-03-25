@@ -1,0 +1,7 @@
+e2e train
+首先在小车上采集好车道线的图片之后可以使使用u盘拷出文件
+接着使用create_data_lists.py来处理采集的车道线
+之后使用train.py来进行基础的车道线模型训练
+在完成基础的车道线的模型训练之后可以在export_onnx.py中将.ph后缀的文件转为onnx后缀的文件
+然后打开onnx_test.py文件验证车道线模型
+最后一步是优化模型，在onnx_simplified.py文件中进行优化模型
